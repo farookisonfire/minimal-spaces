@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import CanvasViz from './CanvasViz';
 import HeaderPrimary from './HeaderPrimary';
 import HeaderSecondary from './HeaderSecondary';
 import HeaderTertiary from './HeaderTertiary';
+import {connect} from 'react-redux';
 
 class Landing extends Component {
   render() {
@@ -17,4 +19,14 @@ class Landing extends Component {
   }
 }
 
-export default Landing;
+Landing.propTypes = {
+  showCanvas: PropTypes.bool.isRequired
+};
+
+const mapStateToProps = ({showCanvas}) => {
+  return {
+    showCanvas
+  };
+};
+
+export default connect(mapStateToProps)(Landing);

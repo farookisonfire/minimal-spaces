@@ -3,6 +3,9 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+/************************************ LANDING PAGE ************************************/
+/******************************************** *****************************************/
+
 .landing {
   background-image: url('../../images/cape-sunset.jpeg');
   background-size: cover;
@@ -24,14 +27,29 @@ body {
 }
 
 /************************************ Navbar ************************************/
+
+.active {
+  /*color: rgba(255,255,255,.6) !important;*/
+  border-bottom: 2px solid red;
+}
+
 .navbar {
+  margin-top: 0;
+  padding-top: 5px;
   position: absolute;
-  top: 5px;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-elements {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 
 .nav-logo {
   margin-left: 15px;
-  width: 60px;
+  width: 50px;
 }
 
 .nav-items {
@@ -106,4 +124,90 @@ body {
 .header-tertiary-title {
   font-size: 36px;
   font-weight: 300;
+}
+
+/************************************ ABOUT PAGE **************************************/
+/******************************************** *****************************************/
+
+/************************************ Navbar ************************************/
+
+.nav-link-dark {
+  border-radius: 4px;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.nav-link-dark:visited {
+  color:white;
+}
+
+.nav-link-dark:hover {
+  border-radius: 4px;
+  color: white;
+
+}
+
+/************************************ About ************************************/
+
+.about-top {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.about-mid {
+  width: 100%;
+  background-color: rgb(247,247,247);
+}
+
+.about-bottom {
+  background-color: rgb(238, 238, 238);
+}
+
+/************************************ About Header ************************************/
+
+.about-header h1 {
+  font-weight: 300;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-subheader h1 {
+  margin-top: 30px;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.about-subheader p {
+  color: rgba(34,34,34,.7);
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/************************************ About Circles ************************************/
+
+.about-circles {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.about-statistics {
+  padding-top: 60px;
+  padding-bottom: 50px
+}
+
+.about-media {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-media-header h1{
+  font-weight: 300;
+  font-size: 30px;
+  padding-top: 50px;
+  margin-bottom: 50px;
 }
