@@ -3,6 +3,7 @@ import {BrowserRouter, Route} from 'react-router-dom';
 import Landing from './features/landing/Landing';
 import Navbar from './features/navbar/Navbar';
 import About from './features/about/About';
+import Admissions from './features/admissions/Admissions';
 
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
           <Navbar />
           <Route exact path='/' component={Landing} />
           <Route path='/learn' component={About} />
+          <Route path='/admissions' component={Admissions} />
         </div>
       </BrowserRouter>
     );

@@ -6,13 +6,6 @@ body {
 /************************************ LANDING PAGE ************************************/
 /******************************************** *****************************************/
 
-.landing {
-  background-image: url('../../images/cape-sunset.jpeg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
-
 .landing-header-container {
   text-align: center;
   position: relative;
@@ -29,7 +22,6 @@ body {
 /************************************ Navbar ************************************/
 
 .active {
-  /*color: rgba(255,255,255,.6) !important;*/
   border-bottom: 2px solid red;
 }
 
@@ -194,6 +186,10 @@ body {
   margin-bottom: 60px;
 }
 
+.about-circles p {
+  color: rgba(34,34,34,.7);
+}
+
 .about-statistics {
   padding-top: 60px;
   padding-bottom: 50px
@@ -210,4 +206,235 @@ body {
   font-size: 30px;
   padding-top: 50px;
   margin-bottom: 50px;
+}
+
+/************************************ ADMISSIONS PAGE **************************************/
+/******************************************** **********************************************/
+
+/************************************ Admissions Header ************************************/
+
+.admissions-top {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+}
+
+.admissions-header-background {
+  background-image: url('../../images/cape-sunset.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.admissions-header h1 {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+/************************************ Admissions Step ************************************/
+
+.admissions-step {
+  padding-top: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.active.section {
+  border: none;
+  font-weight: bold;
+}
+
+.admissions-programs-dropdown {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.admissions-programs-header {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.admissions-programs-header h1{
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.admissions-programs-header p {
+  color: rgba(34,34,34,.7);
+  font-size: 16px; 
+  margin-top: 30px
+}
+
+
+.admissions-programs-youth-empowerment-circles {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  width: 70%; 
+}
+
+.admissions-programs-youth-empowerment-circles p {
+  color: rgba(34,34,34,.7);
+}
+
+/************************************ Admissions Cost ************************************/
+
+.program-cost {
+  background-color: rgb(247,247,247);
+  text-align: center;
+}
+
+.program-cost h1 {
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.program-cost p {
+  color: rgba(34,34,34,.7);
+  font-size: 16px; 
+  margin-top: 30px
+}
+
+.program-cost-header {
+  width: 42.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.program-cost-table {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 70%;
+}
+
+.program-cost-included-header {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.program-cost-included {
+  text-align: center;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.program-cost-not-included-header {
+  width: 42.5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 70px;
+}
+
+/************************************ Admissions Dates ************************************/
+
+.program-dates-table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 70%;
+}
+
+.program-dates-tables {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  vertical-align: top;
+}
+
+.program-dates-header {
+  width: 42.5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.program-dates-header h1 {
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.program-dates-header p {
+  color: rgba(34,34,34,.7);
+  font-size: 16px; 
+  margin-top: 30px
+}
+
+.program-dates-header h1 {
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 50px;
+}
+
+/************************************ Admissions Apply ************************************/
+
+.apply-now-header {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.apply-now-button {
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #FB605B;
+  transition-duration: 1s;
+  border: 1px solid rgba(51,51,51,1);
+
+}
+
+.apply-now-button:hover {
+  background-color: rgba(51,51,51,1);
+  border: 1px solid #FB605B;
+  border-radius: 4px;
+  color: white;
+}
+
+/***************************************** FOOTER ******************************************/
+/******************************************** **********************************************/
+
+.footer {
+  font-weight: 300;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  position: relative;
+  border-top: 1px solid rgb(220,220,220);
+}
+
+.footer img {
+  width: 45px;
+  position: absolute; 
+  left: 0;
+  z-index: -1;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 15px;
+}
+
+.footer-social-media {
+  margin-bottom: 5px;  
 }
