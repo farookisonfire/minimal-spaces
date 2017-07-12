@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {NavLink} from 'react-router-dom';
 import {connect} from 'react-redux';
+import {withRouter} from 'react-router';
 import {unmountCanvas, mountCanvas} from '../landing/landingActions';
 
 class Navbar extends Component {
@@ -15,7 +16,11 @@ class Navbar extends Component {
         </NavLink>
         <ul className="nav-items">
           <li className="nav-item">
-            <a className={showCanvas ? 'nav-link' : 'nav-link-dark' } href="#">APPLY NOW</a>
+            <NavLink exact
+              activeClassName='active' 
+              className={showCanvas ? 'nav-link' : 'nav-link-dark' }  
+              to="/admissions" 
+              onClick={this.props.unmountCanvas}>ADMISSIONS</NavLink>
           </li>
           <li className="nav-item">
             <NavLink 
@@ -43,4 +48,4 @@ const mapStateToProps = ({showCanvas}) => {
   };
 };
 
-export default connect(mapStateToProps, {unmountCanvas, mountCanvas})(Navbar);
+export default withRouter(connect(mapStateToProps, {unmountCanvas, mountCanvas})(Navbar));

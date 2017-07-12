@@ -1,8 +1,10 @@
 import {combineReducers} from 'redux';
 import showCanvas from '../features/landing/landingReducer';
+import programs from '../features/admissions/programsReducer';
 
 const rootReducer = combineReducers({
-  showCanvas
+  showCanvas,
+  programs
 });
 
 export default rootReducer;
